@@ -21,7 +21,7 @@ public class prueba1 {
 
 		// Creamos una Entidad basado en el Persitence Unit Prueba definido en el
 		// persistence.xml
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("ujyt");
+		EntityManagerFactory emf = principal.crearEntityManagerFactory();
 		EntityManager em = emf.createEntityManager();
 
 		Empleado e1 = new Empleado(11, "sanchez", "paulo", new GregorianCalendar(1997, 12, 12).getTime());
@@ -123,7 +123,6 @@ public class prueba1 {
 		System.out.println("----");
 
 		em.close();
-		emf.close();
 
 	}
 
