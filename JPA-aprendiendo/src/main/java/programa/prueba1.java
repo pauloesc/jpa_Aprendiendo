@@ -7,8 +7,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-import org.hsqldb.util.DatabaseManagerSwing;
-
 import entidades.Empleado;
 
 /*
@@ -126,8 +124,6 @@ public class prueba1 {
 
 		em.close();
 		emf.close();
-		DatabaseManagerSwing.main(new String[] { "--url", "jdbc:hsqldb:file:/home/paulo/Escritorio/jpa/db", "--user",
-				"", "--password", "" });
 
 	}
 
