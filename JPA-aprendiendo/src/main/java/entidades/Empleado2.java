@@ -36,7 +36,7 @@ public class Empleado2 implements Serializable {
 	
 	
 	@OneToOne(cascade = {CascadeType.ALL})
-	@JoinColumn( name = "ID_DIRECCION" )
+	@JoinColumn( name = "ID_DIRECCION" ) //esto indica que vamos a crear una ccolumna ID_DIRECCION que va a ser la forengKey de la entidad Direccion
 	private Direccion direccion;
 	
 	
