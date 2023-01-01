@@ -1,6 +1,5 @@
 package entidades;
 
-import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,10 +7,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Empleado")
-public class Empleado implements Serializable {
-	
-	private static final long serialVersionUID = 1L;
+@Table(name = "Empleadoo")
+public class Empleado{
+
 
 	@Id
 	@Column

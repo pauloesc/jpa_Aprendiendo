@@ -5,6 +5,9 @@
 	    
 	    <class>entidades.Empleado</class>
 	    
+	    <class>entidades.Empleado2</class>
+	    <class>entidades.Direccion</class>
+	    
 		<properties>
 	      <property name="jakarta.persistence.jdbc.driver" value="org.hsqldb.jdbcDriver" />
 	      <property name="javax.persistence.jdbc.url" value="jdbc:hsqldb:file:/home/paulo/Escritorio/jpa/db;shutdown=true" />

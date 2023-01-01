@@ -13,13 +13,17 @@ public class principal {
 	
 	public static void main(String[] args) {
 
-		DatabaseManagerSwing.main(new String[] {"--url","jdbc:hsqldb:file:/home/paulo/Escritorio/jpa/db","--user","","--password",""});
 		
 		prueba1 p1 = new prueba1();
 		p1.hacerCosas();
 		
 		prueba2 p2 = new prueba2();
 		p2.hacerCosas();
+
+		DatabaseManagerSwing.main(new String[] {"--url","jdbc:hsqldb:file:/home/paulo/Escritorio/jpa/db","--user","","--password",""});
+		
+		prueba3 p3 = new prueba3();
+		p3.hacerCosas();
 
 
 	}
