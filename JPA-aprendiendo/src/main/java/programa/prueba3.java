@@ -18,8 +18,10 @@ public class prueba3 {
 		EntityManagerFactory emf = principal.crearEntityManagerFactory();
 		EntityManager em = emf.createEntityManager();
 		
-		Empleado2 emp = new Empleado2(10L, "Perez", "Pepito", LocalDate.of(1997, 3, 21));
-		emp.setDireccion(new Direccion(15L, "CALLE FALSA","Springfild","eSTAD", "EEUU"));
+		Empleado2 emp = new Empleado2(10L, "Perez", "Pepito", LocalDate.of(1997, 3, 21),null);
+		Direccion dir = new Direccion(15L, "CALLE FALSA","Springfild","eSTAD", "EEUU",null);
+		emp.setDireccion(dir);
+		dir.setEmpleado(emp);
 		em.getTransaction().begin();
 		em.persist(emp);
 		em.getTransaction().commit();

@@ -34,13 +34,18 @@ public class Direccion {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Direccion(long id, String direccion, String localidad, String provincia, String pais) {
+
+
+	public Direccion(long id, String direccion, String localidad, String provincia, String pais, Empleado2 empleado) {
 		this.id = id;
 		this.direccion = direccion;
 		this.localidad = localidad;
 		this.provincia = provincia;
 		this.pais = pais;
+		this.empleado = empleado;
 	}
+
+
 
 	public long getId() {
 		return id;

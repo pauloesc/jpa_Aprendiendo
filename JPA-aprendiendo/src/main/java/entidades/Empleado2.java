@@ -43,12 +43,19 @@ public class Empleado2 implements Serializable {
 	public Empleado2() {}
 
 
-	public Empleado2(long codigo, String apellido, String nombre, LocalDate fechaNacimiento) {
+
+
+
+	public Empleado2(long codigo, String apellido, String nombre, LocalDate fechaNacimiento, Direccion direccion) {
 		this.codigo = codigo;
 		this.apellido = apellido;
 		this.nombre = nombre;
 		this.fechaNacimiento = fechaNacimiento;
+		this.direccion = direccion;
 	}
+
+
+
 
 
 	public long getCodigo() {
