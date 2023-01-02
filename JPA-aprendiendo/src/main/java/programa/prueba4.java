@@ -34,7 +34,8 @@ public class prueba4 {
 		a2.agregarLibro(l4);
 		a2.agregarLibro(l5);
 		a3.agregarLibro(l2);
-*/
+		*/
+		
 		em.persist(l1);
 		em.persist(l2);
 		em.persist(l3);
