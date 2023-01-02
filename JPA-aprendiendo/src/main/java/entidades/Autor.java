@@ -104,4 +104,17 @@ public class Autor {
 		return "Autor [id=" + id + ", nombre=" + nombre + ", nacionalidad=" + nacionalidad + "]";
 	}
 	
+	public void notificar_el_autor_a_libro(List<Libro> lista) {
+		setLibros(lista);
+		for (Libro libro : lista) {
+			libro.setAutor(this); //con esta linea le notifico al libro quien es su autor (muy importante)
+		}
+	}
+	
+	public void removerLibro(Libro l) {
+		if (libros.contains(l)) {
+			libros.remove(l);
+			l.setAutor(null); // le indico al libro que no tiene un autor
+		}
+	}
 }
