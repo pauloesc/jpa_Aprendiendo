@@ -1,7 +1,5 @@
 package programa;
 
-import java.util.Scanner;
-
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
@@ -13,18 +11,23 @@ public class principal {
 	
 	public static void main(String[] args) {
 
-		
+		/*
 		prueba1 p1 = new prueba1();
 		p1.hacerCosas();
 		
 		prueba2 p2 = new prueba2();
 		p2.hacerCosas();
 
-		DatabaseManagerSwing.main(new String[] {"--url","jdbc:hsqldb:file:/home/paulo/Escritorio/jpa/db","--user","","--password",""});
 		
 		prueba3 p3 = new prueba3();
 		p3.hacerCosas();
-
+		*/
+		
+		
+		prueba4 p4 = new prueba4();
+		p4.hacerCosas();
+		
+		DatabaseManagerSwing.main(new String[] {"--url","jdbc:hsqldb:file:/home/paulo/Escritorio/jpa/db","--user","","--password",""});
 
 	}
 	
@@ -39,7 +42,7 @@ public class principal {
 		return principal.emf;
 	}
 	
-	public static void crearEntityManagerFactoryCerrar() {
+	public static void cerrarEntityManagerFactory() {
 		principal.emf.close();
 		principal.emf = null;
 	}
