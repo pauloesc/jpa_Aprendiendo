@@ -28,13 +28,13 @@ public class prueba4 {
 		Libro l4 = new Libro(4L, "PROGRAMAR EN COBOL ES DIVERTIDO", a2);
 		Libro l5 = new Libro(5L, "PROGRAMAR EN COBOL NO ES DIVERTIDO", a2);
 
-		
+		/*
 		a1.agregarLibro(l3);	
 		a2.agregarLibro(l1);
 		a2.agregarLibro(l4);
 		a2.agregarLibro(l5);
 		a3.agregarLibro(l2);
-
+*/
 		em.persist(l1);
 		em.persist(l2);
 		em.persist(l3);

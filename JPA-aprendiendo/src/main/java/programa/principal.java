@@ -3,8 +3,6 @@ package programa;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-import org.hsqldb.util.DatabaseManagerSwing;
-
 public class principal {
 
 	private static EntityManagerFactory emf = null;
@@ -27,8 +25,9 @@ public class principal {
 		prueba4 p4 = new prueba4();
 		p4.hacerCosas();
 		
-		DatabaseManagerSwing.main(new String[] {"--url","jdbc:hsqldb:file:/home/paulo/Escritorio/jpa/db","--user","","--password",""});
-
+		//DatabaseManagerSwing.main(new String[] {"--url","jdbc:hsqldb:file:/home/paulo/Escritorio/jpa/db","--user","","--password",""});
+		principal.emf.close();
+		
 	}
 	
 	
