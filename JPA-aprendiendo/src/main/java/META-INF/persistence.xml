@@ -10,6 +10,8 @@ version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
 	    
 	   	<class>entidades.Autor</class>
 	    <class>entidades.Libro</class>
+	    <class>entidades.Comentario</class>
+	    <class>entidades.Publicacion</class>
 	    
 		<properties>
 	      <property name="javax.persistence.jdbc.driver" value="org.h2.Driver" />

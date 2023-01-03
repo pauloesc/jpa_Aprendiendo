@@ -21,12 +21,17 @@ public class principal {
 		p3.hacerCosas();
 		*/
 		
-		
+		/*
 		prueba4 p4 = new prueba4();
 		p4.hacerCosas();
 		
 		prueba5 p5 = new prueba5();
 		p5.hacerCosas();
+		*/
+		
+		
+		prueba6 p6 = new prueba6();
+		p6.hacerCosas();
 		
 		//DatabaseManagerSwing.main(new String[] {"--url","jdbc:hsqldb:file:/home/paulo/Escritorio/jpa/db","--user","","--password",""});
 		principal.emf.close();
